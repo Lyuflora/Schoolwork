@@ -1,0 +1,81 @@
+﻿E:\Visual Studio 2017 community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: 中间目录(Debug\)包含从另一个项目(MiniSQL-合.vcxproj)共享的文件。   这会导致错误的清除和重新生成行为。
+  api.cc
+d:\github\schoolwork\minisql\minisql\minisql-合\basic.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\github\schoolwork\minisql\minisql\minisql-合\catalog_manager.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\github\schoolwork\minisql\minisql\minisql-合\template_function.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\github\schoolwork\minisql\minisql\minisql-合\api.cc(119): warning C4018: “<”: 有符号/无符号不匹配
+d:\github\schoolwork\minisql\minisql\minisql-合\api.cc(142): warning C4018: “<”: 有符号/无符号不匹配
+d:\github\schoolwork\minisql\minisql\minisql-合\api.cc(173): warning C4018: “<”: 有符号/无符号不匹配
+  basic.cc
+d:\github\schoolwork\minisql\minisql\minisql-合\basic.cc : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\github\schoolwork\minisql\minisql\minisql-合\basic.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\github\schoolwork\minisql\minisql\minisql-合\basic.cc(13): warning C4018: “<”: 有符号/无符号不匹配
+d:\github\schoolwork\minisql\minisql\minisql-合\basic.cc(63): warning C4018: “<”: 有符号/无符号不匹配
+d:\github\schoolwork\minisql\minisql\minisql-合\basic.cc(126): warning C4018: “<”: 有符号/无符号不匹配
+d:\github\schoolwork\minisql\minisql\minisql-合\basic.cc(134): warning C4018: “<”: 有符号/无符号不匹配
+  buffer_manager.cc
+  catalog_manager.cpp
+d:\github\schoolwork\minisql\minisql\minisql-合\catalog_manager.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\github\schoolwork\minisql\minisql\minisql-合\catalog_manager.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\github\schoolwork\minisql\minisql\minisql-合\basic.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\github\schoolwork\minisql\minisql\minisql-合\catalog_manager.cpp(417): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+  indexManager.cpp
+d:\github\schoolwork\minisql\minisql\minisql-合\basic.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\github\schoolwork\minisql\minisql\minisql-合\catalog_manager.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  interpreter.cc
+d:\github\schoolwork\minisql\minisql\minisql-合\catalog_manager.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\github\schoolwork\minisql\minisql\minisql-合\basic.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\github\schoolwork\minisql\minisql\minisql-合\template_function.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\github\schoolwork\minisql\minisql\minisql-合\interpreter.cc(21): warning C4018: “<”: 有符号/无符号不匹配
+d:\github\schoolwork\minisql\minisql\minisql-合\interpreter.cc(199): warning C4018: “<”: 有符号/无符号不匹配
+d:\github\schoolwork\minisql\minisql\minisql-合\interpreter.cc(340): warning C4018: “>”: 有符号/无符号不匹配
+d:\github\schoolwork\minisql\minisql\minisql-合\interpreter.cc(401): warning C4018: “<”: 有符号/无符号不匹配
+d:\github\schoolwork\minisql\minisql\minisql-合\interpreter.cc(500): warning C4018: “<”: 有符号/无符号不匹配
+d:\github\schoolwork\minisql\minisql\minisql-合\interpreter.cc(511): warning C4018: “<”: 有符号/无符号不匹配
+d:\github\schoolwork\minisql\minisql\minisql-合\interpreter.cc(515): warning C4018: “<”: 有符号/无符号不匹配
+d:\github\schoolwork\minisql\minisql\minisql-合\interpreter.cc(518): warning C4018: “<”: 有符号/无符号不匹配
+d:\github\schoolwork\minisql\minisql\minisql-合\interpreter.cc(525): warning C4018: “<”: 有符号/无符号不匹配
+d:\github\schoolwork\minisql\minisql\minisql-合\interpreter.cc(532): warning C4018: “<”: 有符号/无符号不匹配
+d:\github\schoolwork\minisql\minisql\minisql-合\interpreter.cc(533): warning C4018: “<”: 有符号/无符号不匹配
+d:\github\schoolwork\minisql\minisql\minisql-合\interpreter.cc(540): warning C4018: “<”: 有符号/无符号不匹配
+d:\github\schoolwork\minisql\minisql\minisql-合\interpreter.cc(542): warning C4018: “<”: 有符号/无符号不匹配
+d:\github\schoolwork\minisql\minisql\minisql-合\interpreter.cc(545): warning C4018: “<”: 有符号/无符号不匹配
+d:\github\schoolwork\minisql\minisql\minisql-合\interpreter.cc(550): warning C4018: “<”: 有符号/无符号不匹配
+d:\github\schoolwork\minisql\minisql\minisql-合\interpreter.cc(553): warning C4018: “<”: 有符号/无符号不匹配
+d:\github\schoolwork\minisql\minisql\minisql-合\interpreter.cc(558): warning C4018: “<”: 有符号/无符号不匹配
+d:\github\schoolwork\minisql\minisql\minisql-合\interpreter.cc(562): warning C4018: “<”: 有符号/无符号不匹配
+d:\github\schoolwork\minisql\minisql\minisql-合\interpreter.cc(563): warning C4018: “<”: 有符号/无符号不匹配
+d:\github\schoolwork\minisql\minisql\minisql-合\interpreter.cc(613): warning C4018: “<”: 有符号/无符号不匹配
+d:\github\schoolwork\minisql\minisql\minisql-合\interpreter.cc(622): warning C4018: “<”: 有符号/无符号不匹配
+d:\github\schoolwork\minisql\minisql\minisql-合\interpreter.cc(791): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+  main.cc
+d:\github\schoolwork\minisql\minisql\minisql-合\catalog_manager.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\github\schoolwork\minisql\minisql\minisql-合\basic.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\github\schoolwork\minisql\minisql\minisql-合\template_function.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  record_manager.cc
+d:\github\schoolwork\minisql\minisql\minisql-合\basic.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\github\schoolwork\minisql\minisql\minisql-合\catalog_manager.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\github\schoolwork\minisql\minisql\minisql-合\template_function.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\github\schoolwork\minisql\minisql\minisql-合\record_manager.cc(25): warning C4018: “<”: 有符号/无符号不匹配
+d:\github\schoolwork\minisql\minisql\minisql-合\record_manager.cc(50): warning C4018: “<”: 有符号/无符号不匹配
+d:\github\schoolwork\minisql\minisql\minisql-合\record_manager.cc(58): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+d:\github\schoolwork\minisql\minisql\minisql-合\record_manager.cc(59): warning C4244: “+=”: 从“float”转换到“int”，可能丢失数据
+d:\github\schoolwork\minisql\minisql\minisql-合\record_manager.cc(157): warning C4018: “<”: 有符号/无符号不匹配
+d:\github\schoolwork\minisql\minisql\minisql-合\record_manager.cc(229): warning C4018: “<”: 有符号/无符号不匹配
+d:\github\schoolwork\minisql\minisql\minisql-合\record_manager.cc(298): warning C4018: “<”: 有符号/无符号不匹配
+d:\github\schoolwork\minisql\minisql\minisql-合\record_manager.cc(300): warning C4018: “<”: 有符号/无符号不匹配
+d:\github\schoolwork\minisql\minisql\minisql-合\record_manager.cc(374): warning C4018: “<”: 有符号/无符号不匹配
+d:\github\schoolwork\minisql\minisql\minisql-合\template_function.h(68): warning C4018: “<”: 有符号/无符号不匹配
+  d:\github\schoolwork\minisql\minisql\minisql-合\record_manager.cc(306): note: 参见对正在编译的函数 模板 实例化“void copyString<int>(char *,int &,T)”的引用
+          with
+          [
+              T=int
+          ]
+  正在生成代码...
+d:\github\schoolwork\minisql\minisql\minisql-合\template_function.h(61): warning C4715: “isSatisfied<int>”: 不是所有的控件路径都返回值
+d:\github\schoolwork\minisql\minisql\minisql-合\template_function.h(61): warning C4715: “isSatisfied<float>”: 不是所有的控件路径都返回值
+d:\github\schoolwork\minisql\minisql\minisql-合\template_function.h(61): warning C4715: “isSatisfied<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >”: 不是所有的控件路径都返回值
+d:\github\schoolwork\minisql\minisql\minisql-合\bptree.h(612): warning C4715: “BPTree<int>::deleteKey”: 不是所有的控件路径都返回值
+d:\github\schoolwork\minisql\minisql\minisql-合\bptree.h(612): warning C4715: “BPTree<float>::deleteKey”: 不是所有的控件路径都返回值
+d:\github\schoolwork\minisql\minisql\minisql-合\bptree.h(612): warning C4715: “BPTree<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >::deleteKey”: 不是所有的控件路径都返回值
+  MiniSQL-合.vcxproj -> D:\GitHub\Schoolwork\MiniSQL\MiniSQL\Debug\MiniSQL.exe
