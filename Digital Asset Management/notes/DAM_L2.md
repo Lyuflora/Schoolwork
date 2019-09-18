@@ -1,10 +1,10 @@
-#媒体资源管理
+# 媒体资源管理
 
-##Lecture2
-##Image encoding 图像的编码
+## Lecture2
+## Image encoding 图像的编码
 有损 或 无损
-###Run-Length Encoding 游程编码
-###LZW 解码和编码
+### Run-Length Encoding 游程编码
+### LZW 解码和编码
 Universal lossless data compression algorithm
 
 有损压缩Lossless的常用方法：
@@ -13,7 +13,7 @@ Universal lossless data compression algorithm
 **Transform coding 变换编码**
 <br><br>
 
-###JPEG图像压缩
+### JPEG图像压缩
 
 参考“媒体信号处理”笔记：
 >
@@ -55,7 +55,7 @@ Portable Network Graphics
 bit per pixel
 <br>
 ---
-##音频
+## 音频
 
 重要的概念：量化，允许非均匀量化，而不是简单的抹去小数点<br>
 Digitalized Audio/ Sound
