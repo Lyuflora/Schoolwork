@@ -141,4 +141,39 @@ Audio Video Interleaved
 一种流媒体视频文件格式
 
 ### MOV
--9/17-
+###MPEG标准
+`MPEG-1`:
+>Coding of moving pictures and associated audio for digital storage media.视频压缩、解压缩、回放，电视<br>
+>CD-1, DIGITAL MULTIMEDIA
+>存储的，可建立数据库点播
+
+<br>
+`MPEG-2`:
+>Coding of moving pictures and associated audio for digital storage media.主流的，面向电视的NTSC(美、日)<br>
+>VCR功能（录、快放等）
+
+<br>
+`MPEG-4`
+>互联网影视传播
+
+`MPEG-7`<br>
+`MPEG-21`  媒体资源管理
+
+**MPEG**: 只压缩运动部分
+>only compress moving parts
+
+帧间的连贯性：
+`I B B P` `I B B P`  `I B B P`...
+P帧——运动补偿<br>
+B帧——插值，B之前的I和B之后的P加权平均<br>
+I帧——压缩
+<br><br>
+
+**Color video Compression**
+
+下采样
+**YUV420**等
+
+###H.26X
+H.265
+
