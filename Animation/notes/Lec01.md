@@ -44,7 +44,9 @@ Y = (1-t)× y0 + t × y1
 
 Hermite插值产生曲线，基于Hermite base，以下四个：
 
-![](https://i.imgur.com/w197rMm.png) ![](https://i.imgur.com/L2NHFBA.png) ![](https://i.imgur.com/cKsUeCd.png) ![](https://i.imgur.com/FKy30SX.png)
+![](https://i.imgur.com/w197rMm.png) ![](https://i.imgur.com/L2NHFBA.png) 
+<br>
+![](https://i.imgur.com/cKsUeCd.png) ![](https://i.imgur.com/FKy30SX.png)
 
 		 h1(u) = 2u^3 – 3u^2 + 1 
          h2(u) = -2u^3 + 3u^2 
