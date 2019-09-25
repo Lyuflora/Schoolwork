@@ -141,7 +141,7 @@ Star polygon定义: 对于star polygon 存在一个点, 叫`星点`（star point
 >1. 方法：用两个关键帧矩形，其中一个相对于另一个旋转不同角度θ（θ~𝜋）， Error(t)=(Sat-St)/St
 >![](https://i.imgur.com/aHQZ3EJ.png)
 >![](https://i.imgur.com/x5pq5eS.jpg)
-2. 对应于误差小于10%的角度是/6
+2. 对应于误差小于10%的角度是𝜋/6
 
 
 矢量插值有效的条件<br>
