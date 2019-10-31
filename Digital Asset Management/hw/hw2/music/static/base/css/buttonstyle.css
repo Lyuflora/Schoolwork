@@ -1,0 +1,47 @@
+:root {
+  --height: 100px;
+  --width: 200px;
+}
+
+.cbutton:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.1);
+}
+.cbutton span {
+  color: #fff;
+  font-size: 1rem;
+  z-index: 10;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.cbutton._1 {
+  background: #2980b9;
+}
+
+.cbutton .back {
+  position: absolute;
+  width: 0;
+  height: 0;
+  filter: url(#filter);
+  border-radius: 50%;
+  z-index: 5;
+  transition: all 2.5s cubic-bezier(0.1, 0.22, 0.3, 1);
+}
+.cbutton._1 .back {
+  left: -50%;
+  top: -50%;
+  background: #27ae60;
+}
+
+.cbutton:hover .back {
+  width: calc(2 * var(--width));
+  height: calc(2 * var(--height));
+}
+
+
+

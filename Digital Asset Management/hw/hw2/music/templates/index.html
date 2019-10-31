@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1 , user-scalable=no">
+    <title>MUSIC</title>
+    <link rel="shortcut icon" href="../static/base/images/icon.png">
+    <link rel="stylesheet" href="../static/base/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/base/css/bootstrap-movie.css">
+    <link rel="stylesheet" href="../static/base/css/animate.css">
+
+    <style>
+        .navbar-brand>img {
+            display: inline;
+        }
+         .cover{
+        margin-top: 100px;
+        width:200px;
+        height:200px;
+        border-radius:16px;
+    }
+        .Slogan{
+            font-family: "Monotype Corsiva","Microsoft YaHei",微软雅黑, "Apple Chancery", "URW Chancery L", cursive;
+            color: rgba(8, 48, 85, 0.93);
+            font-size: 25px;
+            line-height: 4;
+        }
+
+
+        .musictitle{
+            font-family:"Aa弯弯";
+            text-align: center;
+            font-size:20px;
+            color: #212931;
+        }
+        .musiclyrics
+        {
+            font-family:"Imprint MT Shadow";
+            font-size:16px;
+            color: #212931;
+        }
+        .main-theme{
+            font-family: "Monotype Corsiva", "Apple Chancery", "URW Chancery L", "Arial", "Microsoft YaHei", "黑体", "宋体", cursive;
+            font-size: 60px;
+            color: #0b142f;
+            font-weight:bold;
+        }
+
+    </style>
+    <style>
+        .media{
+            padding:3px;
+            border:1px solid #ccc
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<!--NAVIGATION-->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="index.html" class="main-theme" style="width:250px;">
+                <img src="../static/base/images/icon.png" style="height:40px;">&nbsp;MUSIC
+            </a>
+        </div>
+        <!--NAVIGATION-->
+        <div class="navbar-collapse collapse">
+            <form class="navbar-form navbar-left" role="search" style="margin-top:35px;margin-left:98px;">
+                <div class="form-group input-group">
+                    <input type="text" class="form-control" placeholder="Search for music...">
+                    <span class="input-group-btn">
+                        <a class="btn btn-default" href="https://music.163.com/"><span class="glyphicon glyphicon-search"></span>&nbsp;Click</a>
+                    </span>
+                </div>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a class="curlink" href="/" style="margin-top:20px;"></span>&nbsp;Home</a>
+                </li>
+                <li>
+                    <a class="curlink" href="/Movie" style="margin-top:20px;"></span>&nbsp;Mystery</a>
+                </li>
+                <li>
+                    <a class="curlink" href="/Radio" style="margin-top:20px;"></span>Leonard</a>
+                </li>
+                <li>
+                    <a class="curlink" href="https://hahacoco.top/" style="margin-top:20px;"></span>More&nbsp;Fun</a>
+                </li>
+            </ul>
+        </div>
+        <!--NAVIGATION-->
+
+    </div>
+</nav>
+
+<section id="poster" style="margin-top:112px">
+    <div class="container">
+        <div class="row wow fadeInRight" data-wow-delay="0.6s">
+            <div class="Slogan">
+                Welcome, <small>这里是一些游戏音乐和我的其他收藏</small>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="musiclist">
+    <div class="container">
+        <div class="row wow fadeIn" data-wow-delay="0.6s">
+            <div class="col-md-12 table-responsive">
+                <table class="table text-left table-bordered" id="musictags" border = 0 >
+                    <tr>
+                        <td class="Tag">
+                            Tag
+                        </td>
+                        <td style="width:110%;height:30px;">
+                            <a name = "tag_games" class="label label-info"><span class="glyphicon glyphicon-tag"></span>&nbsp;Game Soundtrack</a>&nbsp;
+                            <a  href = "#tag_others" class="label label-info"><span class="glyphicon glyphicon-tag"></span>&nbsp;Other Music</a>&nbsp;
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+
+            {% for entry1 in entries1 %}
+            <div class="col-md-3">
+                <div class="musiclist text-center">
+                    <img class = cover src="{{ entry1["image"]}}"width="160" height="160">
+
+                    <div class="text-left" style="margin-left:auto;margin-right:auto;width:210px;">
+                        <span class = "musictitle"> {{ entry1['title']}} {{ entry1["image"]}} </span>
+                        <div>
+                            <audio controls="controls" height="100" width="70">
+                              <source id="music" src="{{ entry1['musicscr'] }}" type="audio/mp3" />
+                            <embed height="100" width="100" src="../static/resource/songs/soundtrack/201.mp3" />
+                            </audio>
+                        </div>
+                    </div>
+                   <a href="play.html" class="btn btn-primary" target="_blank" role="button"><span class="glyphicon glyphicon-play">
+                       Fake Play
+                   </span>&nbsp;</a>
+                </div>
+            </div>
+
+
+            {% else %}
+                 <li>
+                 <em>Unbelievable. No entries in Category1</em>
+            {% endfor %}
+
+                        <div class="col-md-12 table-responsive">
+                <table class="table text-left table-bordered" id="musictags" border = 0 >
+                    <tr>
+                        <td class="Tag">
+                            Tag
+                        </td>
+                        <td style="width:110%;height:30px;">
+                            <a href = "#tag_games" class="label label-info"><span class="glyphicon glyphicon-tag"></span>&nbsp;Game Soundtrack</a>&nbsp;
+                            <a name = "tag_others" class="label label-info"><span class="glyphicon glyphicon-tag"></span>&nbsp;Other Music</a>&nbsp;
+
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+
+
+            {% for entry2 in entries2 %}
+            <div class="col-md-3">
+                <div class="musiclist text-center">
+                    <img class = cover src="{{ entry2["image"]}}"width="160" height="160">
+
+                    <div class="text-left" style="margin-left:auto;margin-right:auto;width:210px;">
+                        <span class = "musictitle"> {{ entry2['title']}}</span>
+                        <div>
+                            <audio controls="controls" height="100" width="70">
+                              <source id="music" src="{{ entry2['musicscr'] }}" type="audio/mp3" />
+                            <embed height="100" width="100" src="../static/resource/songs/soundtrack/201.mp3" />
+                            </audio>
+                        </div>
+                    </div>
+                   <a href="play.html" class="btn btn-primary" target="_blank" role="button"><span class="glyphicon glyphicon-play">
+                       Fake Play
+                   </span>&nbsp;</a>
+                </div>
+            </div>
+
+
+            {% else %}
+                 <li>
+                 <em>Unbelievable. No entries in Category2</em>
+            {% endfor %}
+
+
+
+        </div>
+    </div>
+</section>
+
+<!--底部-->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    DAM 2019-10
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="../static/base/js/jquery.min.js"></script>
+<script src="../static/base/js/bootstrap.min.js"></script>
+<script src="../static/base/js/jquery.singlePageNav.min.js"></script>
+<script src="../static/base/js/wow.min.js"></script>
+<script src="../static/lazyload/jquery.lazyload.min.js"></script>
+<script src="//cdn.bootcss.com/holder/2.9.4/holder.min.js"></script>
+<script>
+    $(function() {
+        new WOW().init();
+    })
+
+</script>
+<script>
+     function a(){
+     var audio = document.getElementById('music');
+     if(audio.paused){
+         audio.play();
+     }
+     else{
+          audio();
+     }
+   }
+</script>
+<script>
+    $(document).ready(function() {
+        $("img.lazy").lazyload({
+            effect: "fadeIn"
+        });
+    });
+
+</script>
+
+</body>
+</html>

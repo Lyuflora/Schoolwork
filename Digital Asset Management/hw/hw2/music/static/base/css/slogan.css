@@ -1,0 +1,18 @@
+.Slogan{
+            font-family: "Monotype Corsiva", "Apple Chancery", "URW Chancery L", cursive;
+            color: rgba(8, 48, 85, 0.93);
+            font-size: 20px;
+            line-height: 3;
+        }
+.main-theme{
+            font-family:  "Monotype Corsiva", "Apple Chancery", "URW Chancery L", "Arial", "Microsoft YaHei", "黑体", "宋体", cursive;
+            font-size: 80px;
+            color: #0b142f;
+            font-weight:bold;
+
+.bookscore{
+            font-family: mybookscore;
+            font-size: smaller;
+        }
+
+

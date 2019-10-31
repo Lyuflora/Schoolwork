@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1 , user-scalable=no">
+    <title>BOOK</title>
+    <link rel="shortcut icon" href="../static/base/images/wooicon.png">
+    <link rel="stylesheet" href="../static/base/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/base/css/bootstrap-movie.css">
+    <link rel="stylesheet" href="../static/base/css/animate.css">
+    <link rel="stylesheet" href="../static/base/css/slogan.css">
+{#    <link rel="stylesheet"  href="{{ url_for('static', filename='/base/css/slogan.css') }}">#}
+
+    <style>
+        .navbar-brand>img {
+            display: inline;
+        }
+         .cover{
+        margin-top: 100px;
+        width:200px;
+        height:200px;
+        border-radius:16px;
+    }
+
+
+        .main-theme{
+            font-family: "Monotype Corsiva", "Apple Chancery", "URW Chancery L", "Arial", "Microsoft YaHei", "黑体", "宋体", cursive;
+            font-size: 60px;
+            color: #0b142f;
+            font-weight:bold;
+        }
+    </style>
+    <style>
+        @font-face{
+         font-family: "mybookname";
+         src: url("../static/base/fonts/HYTieXianHei-35J.ttf") format('truetype');
+        }
+        @font-face{
+         font-family: "mybookscore";
+         src: url("../static/base/fonts/Inkfree.ttf") format('truetype');
+        }
+        .media{
+            padding:3px;
+            border:1px solid #ccc
+        }
+        .booktitle{
+            font-family: mybookname, "Script MT Bold","冬青黑体简体中文 W3","黑体", "Apple Chancery", "URW Chancery L", cursive;
+            color: rgba(16, 38, 47, 0.93);
+            font-size: 22px;
+            margin-top: 50px;
+            line-height: 16px;
+        }
+        .bookyear{
+            color: rgba(23, 15, 11, 0.47);
+            font-size: 13px;
+            margin-bottom: 40px;
+        }
+        .bookreview{
+            font-family: '冬青黑体简体中文 W3','Microsoft YaHei UI Light','Adobe 宋体 Std L' ;
+            font-size: smaller;
+            margin-left: 50px;
+            color: rgba(7, 11, 32, 0.93);
+            line-height: 100px;
+            word-wrap : normal;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<!--NAVIGATION-->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="index.html" class="main-theme" style="width:250px;">
+                <img src="../static/base/images/wooicon.png" style="width:50px;">&nbsp;MYSTERY
+            </a>
+        </div>
+        <!--NAVIGATION-->
+        <div class="navbar-collapse collapse">
+            <form class="navbar-form navbar-left" role="search" style="margin-top:35px;margin-left:98px;">
+                <div class="form-group input-group">
+                    <input type="text" class="form-control" placeholder="Search for movie...">
+                    <span class="input-group-btn">
+                        <a class="btn btn-default" href="https://movie.douban.com/top250?start=0'&filter="><span class="glyphicon glyphicon-search"></span>&nbsp;Click</a>
+                    </span>
+                </div>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+
+                <li>
+                    <a class="curlink" href="/" style="margin-top:20px;"></span>&nbsp;Home</a>
+                </li>
+                <li>
+                    <a class="curlink" href="/Music" style="margin-top:20px;"></span>&nbsp;Music</a>
+                </li>
+                <li>
+                    <a class="curlink" href="/Radio" style="margin-top:20px;"></span>&nbsp;Leonard</a>
+                </li>
+                <li>
+                    <a class="curlink" href="https://hahacoco.top/" style="margin-top:20px;"></span>More&nbsp;Fun</a>
+                </li>
+            </ul>
+        </div>
+        <!--NAVIGATION-->
+
+    </div>
+</nav>
+
+<section id="poster" style="margin-top:112px">
+    <div class="container">
+        <div class="row wow fadeInRight" data-wow-delay="0.6s">
+            <div class="Slogan">
+                阅读之前，没有真相
+            </div>
+        </div>
+    </div>
+</section>
+{% for entry3 in entries3 %}
+<section id="musiclist">
+    <div class="container">
+        <div class="row wow fadeIn" data-wow-delay="0.6s">
+
+
+            <!-- 左对齐 -->
+            <div class="media">
+              <div class="media-left">
+                <img src="{{entry3['cover']}}" class="media-object" style="width:160px">
+              </div>
+              <div class="media-body" width="100px">
+                <h4 class="media-heading booktitle" >{{ entry3['title'] }}</h4>
+                  <p class="media-body bookyear" >{{ entry3['year'] }}</p>
+                <p  class="bookreview">{{ entry3['review'] }}</p>
+              </div>
+            </div>
+            {% else %}
+                 <li>
+                 <em>Unbelievable. No entries in Category1</em>
+            {% endfor %}
+
+{#            <!-- 右对齐 -->#}
+{#            <div class="media">#}
+{#              <div class="media-body">#}
+{#                <h4 class="media-heading">左对齐</h4>#}
+{#                <p>这是一些示例文本...</p>#}
+{#              </div>#}
+{#              <div class="media-right">#}
+{#                <img src="../static/base/images/icon.png" class="media-object" style="width:60px">#}
+{#              </div>#}
+{#            </div>#}
+
+        </div>
+    </div>
+</section>
+
+
+<!--底部-->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    DAM 2019-10
+                </p>
+                <a href="https://book.douban.com/tag/%E6%8E%A8%E7%90%86">以上内容从豆瓣读书中爬取</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="../static/base/js/jquery.min.js"></script>
+<script src="../static/base/js/bootstrap.min.js"></script>
+<script src="../static/base/js/jquery.singlePageNav.min.js"></script>
+<script src="../static/base/js/wow.min.js"></script>
+<script src="../static/lazyload/jquery.lazyload.min.js"></script>
+<script src="//cdn.bootcss.com/holder/2.9.4/holder.min.js"></script>
+<script>
+    $(function() {
+        new WOW().init();
+    })
+
+</script>
+
+<script>
+    $(document).ready(function() {
+        $("img.lazy").lazyload({
+            effect: "fadeIn"
+        });
+    });
+
+</script>
+
+</body>
+</html>
